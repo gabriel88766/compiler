@@ -19,5 +19,9 @@ scope(tokens.tokens)
 
 console.log("teste")
 
+
+// O analisador sintático não está completo, falta gerar a action_table, existem funções
+// para calcular first follow e a tabela auxiliar.
+// syntactic baseado nas tabelas faz o procedimento de reconhecimento
 let program = ["ID", "*", "(", "ID","+","ID", ")", "$"]
 syntactic(program)
