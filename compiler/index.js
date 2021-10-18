@@ -1,10 +1,18 @@
 const fs = require("fs")
 const { analyze } = require("./src/LexicalAnalyser")
-
+const { syntactic } = require("./src/SyntacticAnalyser")
+const { scope } = require("./src/ScopeAnalyser")
 const file = process.argv[2]
 const code = fs.readFileSync(file).toString()
 
-analyze({
+const tokens = analyze({
   codeToRead: code,
   IDTable: {},
 })
+
+console.log(tokens)
+
+//console.log("deu certo")
+//syntatical(tokens.tokens)
+
+scope(tokens.tokens)
