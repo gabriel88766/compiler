@@ -1,4 +1,5 @@
-module.exports = Object.freeze({
+module.exports = Object.freeze(
+  /*{
     "LDE": 1,
     "DE": 2,
     "T": 3,
@@ -75,4 +76,18 @@ module.exports = Object.freeze({
     "DIVIDE": 74,
     "DOT": 75,
     "NOT": 76
-  })
+  }*/
+  { 
+    'E': 1, 
+    'T': 2, 
+    'F': 3, 
+    '(': 4, 
+    'ID': 5, 
+    '+': 6, 
+    '*': 7, 
+    ')': 8, 
+    '$': 9 
+  }
+  //xemplo
+  
+  )

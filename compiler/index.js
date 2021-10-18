@@ -16,3 +16,8 @@ console.log(tokens)
 //syntatical(tokens.tokens)
 
 scope(tokens.tokens)
+
+console.log("teste")
+
+let program = ["ID", "*", "(", "ID","+","ID", ")", "$"]
+syntactic(program)
