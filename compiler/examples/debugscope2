@@ -1,0 +1,17 @@
+function sqrt(n: integer) : integer {
+	var diff,media,min,aux,max: integer;
+    var min: boolean;
+	do{
+		media = max+min;
+		media = media/2;
+		aux = media*media;
+		if (aux > n) {
+			max = media;
+		} else {
+			min = media;
+		}
+		diff = max - min;
+	}while (diff > 1) ;
+
+	return media;
+}

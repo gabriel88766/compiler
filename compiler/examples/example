@@ -11,18 +11,18 @@ function sqrt(n: integer) : integer {
 			min = media;
 		}
 		diff = max - min;
-	}while (diff > 1);
+	}while (diff > 1) ;
 
 	return media;
 }
 
-function mmc(a: integer, b: integer): integer {
+function mmc(a: integer, b: integer) : integer {
 	var aa,bb : integer;
 
 	aa=0;
 	bb=0;
-	while(aa != bb){
-		if (aa < bb){
+	while(aa != bb) {
+		if (aa < bb) {
 			aa = aa+a;
 		}else{
 			bb = bb+b;
@@ -32,15 +32,15 @@ function mmc(a: integer, b: integer): integer {
 	return aa;
 }
 
-function primo(n: integer): boolean {
+function primo(n: integer) : boolean {
 	var divisor: integer;
 	divisor = 2;
 	do {
-		if(mmc(n,divisor) == n){
+		if(mmc(n, divisor) == n) {
 			return true;
 		} else {
 			divisor = divisor + 1;
 		}
-	} while(divisor < sqrt(n));
+	} while(divisor < sqrt(n) ) ;
 	return false;
 }

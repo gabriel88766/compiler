@@ -1,0 +1,10 @@
+type kin = struct { a, b, c : integer ; d, e, f : integer }
+type kintsu = struct { a, b, c : integer ; d, e, f : integer }
+
+var a, b, c : integer;
+
+function sum ( a : integer , b : integer ) {
+    var c : integer;
+    c = a + b;
+    return c;
+}
